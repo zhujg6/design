@@ -23,7 +23,6 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * 登录
 	 */
-	@Override
 	public ResultInfo login(JSONObject obj) {
 		ResultInfo ret = new ResultInfo();
 		if(obj!=null && obj.get("loginName")!=null && obj.get("passww")!=null){
@@ -53,7 +52,6 @@ public class UserServiceImpl implements UserService {
 	 * 增加用户
 	 */
 
-	@Override
 	public ResultInfo register(JSONObject obj) {
 		ResultInfo ret = new ResultInfo();
 		if(obj!=null){
@@ -114,7 +112,6 @@ public class UserServiceImpl implements UserService {
 /**
  * 修改用户信息
  */
-	@Override
 	public ResultInfo modifyUser(JSONObject obj) {
 		ResultInfo ret = new ResultInfo();
 		if(obj != null){
@@ -164,7 +161,6 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * 忘记密码
 	 */
-	@Override
 	public ResultInfo forgetPassww(JSONObject obj) {
 		ResultInfo ret = new ResultInfo();
 		if(obj!=null){

@@ -18,7 +18,6 @@ public class UserRoleServiceImpl implements UserRoleService {
 	 * @param obj
 	 * @return
 	 */
-	@Override
 	public ResultInfo modifyAd(JSONObject obj) {
 		ResultInfo ret = new ResultInfo();
 		if(obj!=null){
