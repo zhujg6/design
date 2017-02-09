@@ -4,7 +4,12 @@ import java.io.Serializable;
 
 public class Mail implements Serializable{
 	
-	public static final String ENCODEING = "UTF-8";  
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2530041594554618903L;
+
+	public static final String ENCODEING = "UTF-8";
 	  
     private String host; // 服务器地址  
   

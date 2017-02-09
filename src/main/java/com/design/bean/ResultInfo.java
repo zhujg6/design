@@ -2,6 +2,7 @@ package com.design.bean;
 
 
 public class ResultInfo {
+	
 	public int code = -1;
 	public String info="";//如果返回的是字符串 resType str
 	public Object retObj;//如果调用该方法的时候需要返回一个对象 可以塞进去 resType bean
