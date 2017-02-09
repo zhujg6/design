@@ -1,0 +1,152 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.design.dao.UserDao">
+<insert id="addUser" parameterType="com.design.bean.UserBean">
+	insert into 
+		wo_userinfo(
+			<trim suffixOverrides=",">
+				<if test="sex!=null">
+					sex,
+				</if>
+				<if test="loginName!=null and loginName!=''">
+					loginname,
+				</if>
+				<if test="username!=null and username!=''">
+					username,
+				</if>
+				<if test="passww!=null and passww!=''">
+					passww,
+				</if>
+				<if test="phone!=null and phone!=''">
+					phone,
+				</if>
+				<if test="tel!=null and tel!=''">
+					tel,
+				</if>
+				<if test="email!=null and email!=''">
+					email,
+				</if>
+				<if test="roleId!=null and roleId!=''">
+					role_id,
+				</if>
+			</trim>
+		) values (
+				<trim suffixOverrides=",">
+				<if test="sex!=null">
+					#{sex},
+				</if>
+				<if test="loginName!=null and loginName!=''">
+					#{loginName},
+				</if>
+				<if test="username!=null and username!=''">
+					#{username},
+				</if>
+				<if test="passww!=null and passww!=''">
+					#{passww},
+				</if>
+				<if test="phone!=null and phone!=''">
+					#{phone},
+				</if>
+				<if test="tel!=null and tel!=''">
+					#{tel},
+				</if>
+				<if test="email!=null and email!=''">
+					#{email},
+				</if>
+				<if test="roleId!=null and roleId!=''">
+					#{roleId},
+				</if>
+				</trim>
+		)
+</insert>
+
+<select id="validationUser" parameterType="com.design.bean.UserBean" resultType="com.design.bean.UserBean">
+	select 
+		id as id,
+		loginname as loginName,
+		username as username,
+		passww as passww,
+		sex as sex,
+		phone as phone,
+		tel as tel,
+		email as email,
+		role_id as roleId
+	from 
+		wo_userinfo
+	where 
+	    1=1
+		<if test="loginName!=null and loginName!=''">
+				and	loginname = #{loginName} 
+		</if>
+		<if test="passww!=null and passww!=''">
+				and	passww = #{passww}
+		</if>
+</select>
+
+<update id="modifyUserInfo" parameterType="com.design.bean.UserBean">
+	update 
+		wo_userinfo
+	set
+			username = #{username},
+			passww = #{passww},
+			sex = #{sex},
+			phone = #{phone},
+			tel = #{tel},
+			email = #{email}
+	where 
+		id = #{id}
+</update>
+
+<select id="queryUserInfoById" parameterType="com.design.bean.UserBean" resultType="com.design.bean.UserBean">
+		select 
+			id as id,
+			loginname as loginName,
+			username as username,
+			passww as passww,
+			sex as sex,
+			phone as phone,
+			tel as tel,
+			email as email,
+			role_id as roleId
+		from 
+			wo_userinfo
+		where
+			id = #{id}
+		
+</select>
+
+<select id="queryUserInfoByLoginName" parameterType="com.design.bean.UserBean" resultType="com.design.bean.UserBean">
+	select 
+			id as id,
+			loginname as loginName,
+			username as username,
+			passww as passww,
+			sex as sex,
+			phone as phone,
+			tel as tel,
+			email as email,
+			role_id as roleId
+		from 
+			wo_userinfo
+		where
+			loginname = #{loginName}
+</select>
+
+<select id="queryUserInfoByEmail" parameterType="com.design.bean.UserBean" resultType="com.design.bean.UserBean">
+	select 
+			id as id,
+			loginname as loginName,
+			username as username,
+			passww as passww,
+			sex as sex,
+			phone as phone,
+			tel as tel,
+			email as email,
+			role_id as roleId
+		from 
+			wo_userinfo
+		where
+			email = #{email}
+</select>
+
+
+</mapper>

@@ -1,0 +1,12 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.design.dao.UserRoleDao">
+<update id="modifyUserAd" parameterType="com.design.bean.UserBean">
+	update
+		wo_userinfo
+	set
+		role_id = #{roleId}
+	where
+		id = #{id}
+</update>
+
+</mapper>
