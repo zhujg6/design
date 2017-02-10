@@ -3,6 +3,7 @@ package com.design.service.impl;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.design.bean.BeanFactoryUtil;
@@ -16,7 +17,7 @@ import com.design.util.CreatePassww;
 import com.design.util.JsonPluginsUtil;
 import com.design.util.MailUtil;
 import com.design.util.Md5Util;
-
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
 	private static Logger logger = Logger.getLogger(UserServiceImpl.class);
@@ -125,7 +126,7 @@ public class UserServiceImpl implements UserService {
 					newUser.setUsername(userBean.getUsername());
 				}
 				if(userBean.getPassww()!=null&&!"".equals(userBean.getPassww())){
-					newUser.setPassww(userBean.getPassww());
+					newUser.setPassww(Md5Util.getMd5(userBean.getPassww()));
 				}
 				if(userBean.getPhone()!=null&&!"".equals(userBean.getPhone())){
 					newUser.setPhone(userBean.getPhone());

@@ -1,6 +1,7 @@
 package com.design.service.impl;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.design.bean.BeanFactoryUtil;
@@ -9,7 +10,7 @@ import com.design.bean.UserBean;
 import com.design.dao.UserRoleDao;
 import com.design.service.UserRoleService;
 import com.design.util.JsonPluginsUtil;
-
+@Service("userRoleService")
 public class UserRoleServiceImpl implements UserRoleService {
 
 	private static Logger logger = Logger.getLogger(UserRoleServiceImpl.class);
@@ -40,6 +41,5 @@ public class UserRoleServiceImpl implements UserRoleService {
 		}
 		return ret;
 	}
-	
 		
 }
