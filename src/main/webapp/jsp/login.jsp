@@ -16,7 +16,6 @@
 <link href="<c:url value='/css/bootstrap-responsive.min.css'/>" rel="stylesheet">
 <link href="<c:url value='/css/login.css'/>" rel="stylesheet" />
 </head>
-  
 <body>
 <div class=" login_header">
     <div class="container">

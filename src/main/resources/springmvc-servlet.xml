@@ -18,6 +18,8 @@
  	
  	<mvc:resources location="/images/" mapping="/images/**"/>
  	
+ 	<!--<mvc:resources location="/ajax/" mapping="/ajax/**"/>  -->
+ 	
  	<mvc:resources location="/include/" mapping="/include/*"/>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/jsp/"/>
