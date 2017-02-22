@@ -1,0 +1,327 @@
+body {
+	font-family: Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+    line-height: 24px;font-size:12px;
+}
+a{ color:#666; text-decoration:none;}
+.top-router{padding:100px 100px; min-height:250px;}
+.top-router .top-router-network{float: left;
+    margin: 0;
+    position: relative;}
+.top-router-internet{background-image: url("topoImage/topimg01.png");
+    background-position: center 42%;
+    background-repeat: no-repeat;
+    float: left;
+    height: 250px;
+    margin-left: 16px;
+    position: relative;
+    width: 140px;}	
+
+.top-router-linkip.btn {
+    left: 16px;
+    position: absolute;
+    top: 170px;
+    width: 105px;
+	height:24px;
+}
+.top-router-linkip.btn {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px dashed #a7a7a7;
+    color: #555;
+    display: block;
+    margin: 0 auto 30px;
+    z-index: 3;
+}
+.top-router-linkip.btn {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 7px 16px;
+    text-align: center;
+    transition: all 0.1s ease-in 0s;
+    vertical-align: middle;
+}
+.top-router-linkip.btn:hover{ background:#333; color:#fff;}
+.top-router-vxnet0:before{
+    background: none repeat scroll 0 0 #333;
+    content: "";
+    display: block;
+    height: 6px;
+    left: -64px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 64px;
+}
+.top-router-vxnet0:after{
+    background: none repeat scroll 0 0 #fff;
+    border: 4px solid #333;
+    border-radius: 30px;
+    content: "";
+    height: 10px;
+    left: -6px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    z-index: 3;
+}
+.top-router-vxnet0{
+    background-image: url("topoImage/topimg05.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 250px;
+    margin: 0 0 0 40px;
+    position: relative;
+    width: 5px;
+}
+.top-router-firewall:before {
+    left: -26px;
+    width: 20px;
+}
+.top-router-firewall:after {
+    background: none repeat scroll 0 0 #333;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+}
+.top-router-firewall:after {
+    right: -46px;
+    width: 40px;
+}
+.top-router-firewall:before,.top-router-firewall:after{
+    background: none repeat scroll 0 0 #333;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+}
+.top-router-firewall{
+    background-color: #fff;
+    background-image: url("topoImage/topimg02.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-left: 6px solid #333;
+    border-right: 6px solid #333;
+    float: left;
+    height: 154px;
+    margin: 50px 40px 50px 20px;
+    position: relative;
+    width: 28px;
+}
+.top-router-firewall a.fw-name{
+    color: #333;
+    display: inline;
+    font-size: 14px;
+    height: 14px;
+    left: -42px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+    top: -50px;
+    width: 110px;
+}
+a {
+    text-decoration: none;
+}
+.top-router-router:before{
+    background: none repeat scroll 0 0 #fff;
+    border: 4px solid #333;
+    border-radius: 30px;
+    content: "";
+    height: 10px;
+    left: -17px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    z-index: 3;
+}
+.top-router-router:after{
+    background: none repeat scroll 0 0 #333;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: -3px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    width: 40px;
+}
+.top-router-router{
+    background-image: url("topoImage/topimg03.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left;
+    height: 250px;
+    margin: 0 40px 0 0;
+    position: relative;
+    width: 64px;
+}
+
+.top-router-router .private-ip, .top-router-router .router-id{
+    color: #333;
+    display: inline;
+    font-size: 14px;
+    height: 14px;
+    left: -35px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    width: 110px;
+}
+.top-router-router .router-id{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 170px;
+    white-space: nowrap;
+}
+.top-router-vxnets {
+    border-left: 6px solid #333;
+    float: left;
+    min-height: 250px;
+}
+.top-router-vxnets {
+    margin: 0;
+}
+.top-router-vxnet:before {
+    background: none repeat scroll 0 0 #333;
+    content: "";
+    display: block;
+    height: 6px;
+    left: -30px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+.top-router-vxnet {
+    background-image: url("topoImage/topimg06.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0 30px;
+    position: relative;
+    width: 48px;
+}
+.top-router-vxnet .ip-network {
+    color: #333;
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    height: 24px;
+    left: 70px;
+    position: absolute;
+    width: 340px;
+}
+.top-router-vxnet .vxnet-id,.top-router-vxnet .vxnet-name {
+    color: #333;
+    left: -36px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    top: 12px;
+    white-space: nowrap;
+    width: 120px;
+}
+.top-router-vxnet-instances {
+    background-image: url("topoImage/topimg07.png");
+    background-position: center center;
+    background-repeat: repeat-x;
+    float: left;
+    margin-left: 48px;
+    min-width: 245px;
+    padding: 0 15px;
+}
+.top-router-vxnet-instances .component-vxnet-instance.none {
+    background-image: none;
+}
+.top-router-vxnet-instances .component-vxnet-instance {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    width: 32px;
+}
+.none {
+    color: #777;
+    font-style: italic;
+}
+.top-router-vxnet-instances.none .btn {
+    border: 0 none;
+    display: block;
+    height: 30px;
+    left: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 30px;
+}
+.top-router-vxnet-instances .btn {
+    background: none repeat scroll 0 0 #fff;
+    color: #555;
+    z-index: 3;
+}
+.btn {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.1s ease-in 0s;
+    vertical-align: middle;
+}
+.top-router-vxnet-instances .component-vxnet-instance {
+    background-image: url("topoImage/topimg04.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    width: 28px;
+}
+.top-router-vxnet-instances .component-vxnet-instance .instance-name, .top-router-vxnet-instances .component-vxnet-instance .instance-id {
+    color: #333;
+    display: inline-block;
+    left: -8px;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: -45px;
+    transform: rotate(300deg);
+    white-space: nowrap;
+    width: 70px;
+}
+.addbtn{padding-top:35px;}
+.addbtn a{ border:1px dotted #666;padding:2px 5px;; float:left;}
+.addbtn a:hover{ background:#000; color:#FFF;}
+.addbtn a i{font-size:14px;}
+.top-router-linkip i{margin-right:5px;}
+.component-vxnet-slb{ position:relative;}
+.component-vxnet-slb {
+    background-image: url("topoImage/slb.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    width: 48px;
+}
+.vmgroup ul{ width:300px;}
+.vmgroup ul li img{ width:16px;}
+.vmgroup ul li{ float:left; margin:5px;}

@@ -1,0 +1,143 @@
+div.msgBox
+{
+        position: fixed;
+    z-index: 9000;
+   
+    width: 430px;
+    min-height:160px;
+    color: #00335e;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0px 0px 11px #000000;
+    -webkit-box-shadow: 0px 0px 11px #000000;
+    box-shadow: 0px 0px 11px #000000;
+    font-family:"微软雅黑";
+    line-height: 36px;
+}
+div.msgBoxBackGround
+{
+    top:0;
+    left:0;
+    position:absolute;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color:#000000;
+    opacity:0.9;
+    z-index:8999;
+}
+div.msgBoxTitle
+{
+   background: url("../images/msgBox-title-bj.png") repeat-x scroll  transparent !important;
+    border: 1px solid #4B81A6;
+    /* border: 1px solid #D58000; ��ɫ��������ʽ  */
+    border-radius: 6px 6px 0px 0px;
+    color: #fff;
+    font-size: 16px !important;
+    height: 34px !important;
+    line-height:30px;
+    text-align: left;
+    padding-left:5px;
+    text-decoration: none;
+
+   
+}
+
+
+div.msgBoxContainer 
+{
+    background-color: #F5F5F5;
+    float:left;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+
+div.msgBoxContent
+{
+    font-size:11pt;
+    margin:0 6px 6px 65px;
+    display:inline-block;
+     min-height: 65px;
+     
+    
+}
+
+div.msgBoxImage img
+{   position: absolute;
+    height:32px;
+    width:32px;
+    margin: 20px;
+}
+div.msgBoxContent p
+{
+    padding:0;
+    margin-top: 23px;
+    display: table;
+    height: 100%;
+    width: 100%;
+    line-height:24px;
+}
+
+div.msgBoxContent span 
+{
+    display: table-cell;
+    vertical-align: middle;
+    color: #333;
+    word-break: break-all;
+    padding-right:10px;
+   
+}
+
+div.msgBoxButtons
+{   border-top: 1px solid #fff;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding: 10px 0;
+    background-color: #F5F5F5;
+}
+div.msgBoxButtons input[type='button'],div.msgBoxButtons input[type='button']:hover
+{
+    cursor:pointer;
+    margin:2px;
+    height:35px;
+    width:110px;
+    color:#333;
+    border: none;
+    overflow: hidden;
+    text-align:center;
+    padding-left:0px;
+}
+div.msgBoxButtons input[type='button']{background: url("../images/msgBox-btn.png") no-repeat 0 0!important;}
+div.msgBoxButtons input[type='button']:hover
+{
+    background: url("../images/msgBox-btn.png") no-repeat 0 -35px!important;
+}
+div.msgBoxButtons input[type='button']:active
+{
+    background-color:#AAAAAA;
+    color:White;
+}
+
+div.msgBoxInputs
+{
+    margin:0 auto;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-top:5px;
+    width:195px;
+}
+div.msgInput input[type='text'],div.msgInput input[type='password']
+{
+    padding:4px;
+    border:1px solid #DFDFDF;
+    color:#2f2f2f;
+    width:180px;
+}
+div.msgInput text
+{
+    color:#2f2f2f;
+    font-size:10pt;
+}

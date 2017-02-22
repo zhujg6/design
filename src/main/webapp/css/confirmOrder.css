@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0px; padding:0px; }
+img, input { vertical-align:middle; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border: none; max-width:100%; }
+h1,h2,h3,h4,h5,h6 { font-weight:normal; }
+em,i { font-style:normal; }
+u { text-decoration:none; }
+.fl { float:left; }
+.fr { float:right; }
+.clear { clear:both; }
+.clearfix:after { content:""; display:block; height:0px; clear:both; visibility:hidden; }
+.clearfix { *zoom:1; }
+html, body{ min-width:1170px; font-family:"微软雅黑","Helvitica Neue",Arial,"宋体","Arial Narrow",HELVETICA; }
+
+.header img { width: 100%; }
+.contain { width:1170px; margin:0 auto;*margin:0 auto; padding-top:35px; }
+.contain .alert img { width:50px; }
+.contain .alert span { font-size:20px; color:#f02300; font-weight:bold; }
+.contain h3 { font-size:18px; color:#323333; font-weight:bold; margin: 10px auto 6px;*margin: 15px auto 6px; }
+.contain table { width:100%; text-align:center; }
+.contain table thead tr { background:#e8e8e8; height:40px; }
+.contain table thead th { border:2px solid #fff; }
+.contain table tbody tr { background:#f7f7f7; height:80px; }
+.contain table tbody td { border:2px solid #fff; }
+.contain  h4 { text-align:right; margin:5px 8px 5px 0px; *margin:5px 8px 5px 0px; font-size:16px; }
+.contain h4 span { font-size:18px; color:#f02300; font-weight:bold; }
+.contain .confirInfo { padding:8px 0px; border-top:2px solid #cecece;border-bottom:2px solid #cecece;}
+.contain .confirInfo p { font-size:15px; line-height:22px; color:#323333; font-weight:bold; }
+.contain .confirInfo h5 { text-align:right; }
+.contain .confirInfo h5 a { width:100px; height:30px; line-height:30px; text-align:center; color:#fff; font-size:15px; display:inline-block; margin-right:8px;*margin-right:8px; background:#ff7f00;}
+.contain .confirInfo h5 a:hover { color:#fff;  background:#f8ae2e;}
+

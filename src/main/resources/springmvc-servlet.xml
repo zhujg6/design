@@ -8,9 +8,19 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	<mvc:annotation-driven/>
   	<context:component-scan base-package="com.design.controller"/>	
-  	<mvc:resources location="/js/" mapping="/js/*.js"/>
+  	<!-- <mvc:resources location="/js/" mapping="/js/*.js"/> -->
+  	
+  	<mvc:resources location="/css/" mapping="/css/**"/>
+  	
+ 	<mvc:resources location="/scripts/" mapping="/scripts/**"/>
+ 	
+ 	<mvc:resources location="/scripts/jquery/" mapping="/scripts/jquery/**"/>
+ 	
+ 	<mvc:resources location="/images/" mapping="/images/**"/>
+ 	
+ 	<mvc:resources location="/include/" mapping="/include/*"/>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/moules/"/>
+		<property name="prefix" value="/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
 </beans>

@@ -1,0 +1,424 @@
+/*   
+  SmartWizard 2.0 plugin 
+  jQuery Wizard control Plugin
+  by Dipu
+  
+  http://www.techlaboratory.net
+  http://tech-laboratory.blogspot.com
+*/
+.swMain {
+  position:relative;
+  display:block;
+  margin:0;
+  padding:0;
+  border: 0 solid #CCC;
+  overflow:visible;
+  float:left;
+  width:980px;
+}
+.swMain .stepContainer {
+  display:block;
+  position: relative;
+  margin: 0;
+  padding:0;    
+ border: 1px solid #CCC; 
+  overflow-x: hidden;
+  overflow-y: scroll;
+  clear:both;
+  height:300px;
+   background-color:#F8F8F8;
+   -webkit-border-radius: 4px;
+  -moz-border-radius  : 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.swMain .stepContainer div.content {
+  display:block;
+  position: absolute;  
+  float:left;
+  margin: 0;
+  padding:5px;    
+  font: normal 12px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif; 
+  color:#5A5655;    
+  height:300px;
+  text-align:left;
+  overflow:visible;    
+  z-index:88; 
+ 
+  width:940px;
+  clear:both;
+ }
+
+.swMain div.actionBar {
+  display:block;
+  position: relative; 
+  clear:both;
+  margin:             3px 0 0 0;   
+  padding:            0;    
+  color:              #5A5655;   
+  height:40px;
+  text-align:left;
+  overflow:auto;    
+  z-index:88; 
+  left:0;
+}
+
+.swMain .stepContainer .StepTitle {
+  display:block;
+  position: relative;
+  margin:0;   
+  border:1px solid #E0E0E0;
+  padding:5px;   
+  font: bold 15px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif; 
+  color:#5A5655;   
+  background-color:#EdEdEd;
+  clear:both;
+  text-align:left; 
+  z-index:88;
+  -webkit-border-radius: 5px;
+  -moz-border-radius  : 5px;    
+}
+.swMain ul.anchor {
+  position: relative;
+  display:block;
+  float:left;
+  list-style: none;
+  padding: 0;
+  margin: 0px 0px 15px 0px;      
+  clear: both;
+  border: 0 solid #CCCCCC;
+  background: transparent; /*#EEEEEE */
+}
+.swMain ul.anchor li{ 
+  position: relative; 
+  display:block;
+  margin: 0;
+  padding: 0 3px;
+  border: 0 solid #E0E0E0;
+  float: left;
+}
+/* Anchor Element Style */
+.swMain ul.anchor li a {
+  display:block;
+  position:relative;
+  float:left;
+  padding:3px;
+  height: 40px;
+  width:230px;
+  text-decoration: none;
+  outline-style:none;
+  -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;
+  z-index:99;
+  border-radius: 4px 4px 4px 4px;
+}
+.swMain ul.anchor li a .stepNumber{
+  position:relative;
+  float:left;
+  width:30px;
+  text-align: center;
+  padding: 0 5px 5px;
+  font: bold 32px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+}
+.swMain ul.anchor li a .stepDesc{
+  position:relative;
+  display:block;
+  float:left;
+  text-align: left;
+
+  font: bold 12px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+}
+.swMain ul.anchor li a .stepDesc small{
+  font: normal 14px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+}
+.swMain ul.anchor li a.selected{
+  color:#F8F8F8;
+  background: #EA8511;  /* EA8511 */
+  border: 1px solid #EA8511;
+  cursor:text;
+  -moz-box-shadow: 5px 5px 8px #888;
+  -webkit-box-shadow: 5px 5px 8px #888;
+  box-shadow: 5px 5px 8px #888;
+}
+.swMain ul.anchor li a.selected:hover {
+  color:#F8F8F8;  
+  background: #EA8511;  
+}
+
+.swMain ul.anchor li a.done { 
+  position:relative;
+  color:#FFF;  
+  background: #8fabbd;  
+  border: 1px solid #88a5b8;   
+  z-index:99;
+}
+.swMain ul.anchor li a.done:hover {
+  color:#fff;  
+  background: #7e9eb3; 
+  border: 1px solid #7394a9;   
+}
+.swMain ul.anchor li a.disabled {
+  color:#CCCCCC;  
+  background: #F8F8F8;
+  border: 1px solid #CCC;  
+  cursor:text;   
+}
+.swMain ul.anchor li a.disabled:hover {
+  color:#CCCCCC;  
+  background: #F8F8F8;     
+}
+
+.swMain ul.anchor li a.error {
+  color:#6c6c6c !important;  
+  background: #f08f75 !important;
+  border: 1px solid #fb3500 !important;      
+}
+.swMain ul.anchor li a.error:hover {
+  color:#000 !important;       
+}
+
+.swMain .buttonNext {
+  display:block;
+  float:right;
+  margin:5px 3px 0 3px;
+  padding:5px;
+  text-decoration: none;
+  text-align: center;
+  font: bold 13px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+  width:100px;
+  color:#FFF;
+  outline-style:none;
+  background-color:   #5A5655;
+  border: 1px solid #5A5655;
+  -moz-border-radius  : 5px; 
+  -webkit-border-radius: 5px;    
+}
+.swMain .buttonDisabled {
+  color:#F8F8F8  !important;
+  background-color: #CCCCCC !important;
+  border: 1px solid #CCCCCC  !important;
+  cursor:text;    
+}
+.swMain .buttonPrevious {
+  display:block;
+  float:right;
+  margin:5px 3px 0 3px;
+  padding:5px;
+  text-decoration: none;
+  text-align: center;
+  font: bold 13px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+  width:100px;
+  color:#FFF;
+  outline-style:none;
+  background-color:   #5A5655;
+  border: 1px solid #5A5655;
+  -moz-border-radius  : 5px; 
+  -webkit-border-radius: 5px;    
+}
+.swMain .buttonFinish {
+  display:block;
+  float:right;
+  margin:5px 10px 0 3px;
+  padding:5px;
+  text-decoration: none;
+  text-align: center;
+  font: bold 13px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+  width:100px;
+  color:#FFF;
+  outline-style:none;
+  background-color:   #5A5655;
+  border: 1px solid #5A5655;
+  -moz-border-radius  : 5px; 
+  -webkit-border-radius: 5px;    
+}
+.swMain .buttonNext,.swMain .buttonDisabled,.swMain .buttonPrevious,.swMain .buttonFinish{ border-radius: 3px 3px 3px 3px;}
+/*.swMain .buttonDisabled{
+	background: -moz-linear-gradient(center top , #ccc, #ccc);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#ccc));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccc,endColorstr=#ccc,grandientType=1);}
+.swMain .buttonNext,.swMain .buttonPrevious,.swMain .buttonFinish{
+	background: -moz-linear-gradient(center top , #444, #222);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#222));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#444,endColorstr=#222,grandientType=1);
+  
+}
+.swMain .buttonNext:hover,.swMain .buttonPrevious:hover,.swMain .buttonFinish:hover{
+	background: -moz-linear-gradient(center top , #222, #222);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#222), to(#222));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#444,endColorstr=#222,grandientType=1);
+  
+}*/
+/* Form Styles */
+
+.txtBox {
+  border:1px solid #CCCCCC;
+  color:#5A5655;
+  font:13px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+  padding:2px;
+  width:430px;
+}
+.txtBox:focus {
+  border:1px solid #EA8511;
+}
+
+.swMain .loader {
+  position:relative;  
+  display:none;
+  float:left;  
+  margin: 2px 0 0 2px;
+  padding:8px 10px 8px 40px;
+  border: 1px solid #FFD700; 
+  font: bold 13px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif; 
+  color:#5A5655;       
+  background: #FFF url(../images/loader.gif) no-repeat 5px;  
+  -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;
+  z-index:998;
+}
+.swMain .msgBox {
+  position:relative;  
+  display:none;
+  float:left;
+  margin: 4px 0 0 5px;
+  padding:5px;
+  border: 1px solid #FFD700; 
+  background-color: #FFFFDD;  
+  font: normal 12px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif; 
+  color:#5A5655;         
+  -moz-border-radius  : 5px;
+  -webkit-border-radius: 5px;
+  z-index:999;
+  min-width:200px;  
+}
+.swMain .msgBox .content {
+  font: normal 12px "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+  padding: 0;
+  float:left;
+}
+.swMain .msgBox .close {
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  color: #CCC;
+  display: block;
+  float: right;
+  margin: 0 0 0 5px;
+  outline-style: none;
+  padding: 0 2px 0 2px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.swMain .msgBox .close:hover{
+  color: #EA8511;
+  border: 1px solid #EA8511;  
+}
+/**/
+
+div.grid0 {
+	background: none repeat scroll 0 0 #EEEEEE;
+	padding: 20px 30px;
+	color: #2A2D2E;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+div.types-item {
+	cursor: pointer;
+	float: left;
+	height: 70px;
+	margin: 0 3px;
+	opacity: 0.9;
+	text-align: center;
+	width: 56px;
+}
+.types-item .types-item-child1{background: #B1C4D1;}
+.types-item .types-item-child2{background: #A0B8C7;}
+.types-item .types-item-child3{background: #93AEBF;}
+.types-item .types-item-child4{background: #86A5B7;}
+.types-item .types-item-child5{background: #7397AC;}
+.types-item .types-item-child6{background: #6189A0;}
+.types-item .types-item-child7{background: #577C93;}
+.types-item .types-item-child8{background: #4B6C81;}
+
+.types-item span {
+	color: transparent;
+	content: "✓";
+	font-size: 19px;
+	font-weight: bold;
+}
+.types-item h6{color: #4D6C82; font-weight: normal;font-size:14px;}
+div.inner {
+	background-color: #8FABBD;
+	height: 30px;
+	padding-top: 6px;
+}
+.types-item span.selected {
+	color: #FFFFFF;
+}
+
+div.types-options:first-child {
+	margin-left: 0;
+}
+
+div.types-options.selected,div.types-options.selected:hover {
+	background: none repeat scroll 0 0 #8FABBD;
+	border: 1px solid #6C91A8;
+	color: #FFFFFF;
+}
+div.cpu-options {
+	width: 50px;
+}
+
+div.memory-options {
+	font-size: 12px;
+	/*height: 33px;
+	line-height: 33px;
+	padding: 12px 8px;*/
+	vertical-align: middle;
+	width: 50px;
+	word-break: break-all;
+}
+
+div.types-options {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #C1D1DB;
+	border-radius: 4px 4px 4px 4px;
+	color: #4D6C82;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 4px;
+	padding: 8px 5px;
+	text-align: center;
+	margin-bottom:5px;
+	margin-left:0px;
+}
+div.types-options.disabled {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D6D6D6;
+    color: #777777;
+    cursor: no-drop;
+    text-shadow: 0 1px #FFFFFF;
+}
+div.types-options:hover{background:#E1EAEE;}
+
+div.memory-options:first-child {
+	/*line-height: 33px;*/
+}
+
+div.vxnet-item {
+	border: 1px solid #CFEAF8;
+	border-radius: 3px 3px 3px 3px;
+	cursor: pointer;
+	margin: 3px 0;
+	padding: 1px 5px;
+}
+
+p.tips {
+	background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    border-radius: 4px 4px 4px 4px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}

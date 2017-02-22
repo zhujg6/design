@@ -1,0 +1,113 @@
+html body { background: none repeat scroll 0 0 #f1f4f6;}
+.page-activities {
+    background: none repeat scroll 0 0;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 80%;
+}
+.activities-title {
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 20px;
+}
+.activities-items {
+    border-left: 3px solid #eee;
+    margin: 20px 15px 10px 30px;
+    padding: 0 0 20px 20px;
+}
+.activities-items .job-status.successful {
+    background: none repeat scroll 0 0 #3488df;
+    box-shadow: 0 0 0 1px #3488df;
+}
+.activities-items .job-status {
+    border: 3px solid #fff;
+    border-radius: 3em;
+    display: inline-block;
+    float: left;
+    height: 12px;
+    margin-left: -30px;
+    margin-top: -2px;
+    width: 12px;
+}
+.activities-items .job-details {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border-radius: 3px;
+    margin: 0 10px 20px 0;
+    padding: 12px;
+}
+.activities-items .job-action {
+    color: #333;
+    font-size: 14px;
+}
+.activities-items .job-time {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.activities-items .id {
+    background: none repeat scroll 0 0 #e7f4fb;
+    border-radius: 2px;
+    margin: 0 0px;
+    padding: 0 5px;
+}
+.id, .ids {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+.id, .ids, .rname {
+    color: #1f90c8;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 8px;
+    vertical-align: top;
+    word-break: normal;
+    word-wrap: break-word;
+}
+.activities-items .resources li {
+    margin: 2px 0;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #3b3f4e none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #353946;
+    border-image: none;
+    border-radius: 3px;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 3px 0 0;
+    padding: 7px 16px;
+    text-align: center;
+    transition: all 0.1s ease-in 0s;
+    vertical-align: middle;
+}
+.btn-load-more-activities {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+.btn:hover,.btn:focus{
+	color :¡¡#353946;
+}
+#queryForm .span6{
+	width : 250px;
+}
+#queryForm input[type="text"]{
+	margin-right:20px;
+	width:20%;
+}
+#queryForm select{
+	margin-right:20px;
+	width:22.5%;
+}
+#queryForm{
+	margin-left:20px;
+}

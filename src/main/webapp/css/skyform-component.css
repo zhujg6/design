@@ -1,0 +1,16 @@
+/*
+* css defination for skyform portalet component. 
+*/
+
+.skyform-portlet { margin: 0 1em 1em 0; }
+.skyform-portlet-header { margin: 0.3em; padding-bottom: 4px; padding-left: 0.2em; }
+.skyform-portlet-header .ui-icon { float: right; }
+.skyform-portlet-content { padding: 0.4em; }
+.skyform-ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.skyform-ui-sortable-placeholder * { visibility: hidden; }
+.skyform-portalet-header .ui-icon { float: right; }
+.skyform-portalet-column {float: left; padding-bottom: 100px;padding-left:10px; }
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important;  }
+.ui-sortable-placeholder * { visibility: hidden; }
+.skyform-portalet {margin-bottom:10px;}
+.skyform-portalet-content {width:100%;height:320px;padding: 10px};

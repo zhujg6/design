@@ -90,4 +90,5 @@ public class UserController {
 		request.getSession().setAttribute("userInfo", JsonPluginsUtil.beanToJson(ret));
 		WebUtil.setResponse(response, JsonPluginsUtil.beanToJson(ret));
 	}
+	
 }

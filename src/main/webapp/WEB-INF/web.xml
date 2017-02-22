@@ -55,4 +55,25 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext.xml</param-value>
 </context-param>
+<servlet>
+		<servlet-name>gernerateCodeServlet</servlet-name>
+		<servlet-class>com.design.controller.GernerateCodeServlet</servlet-class>
+		<init-param>
+			<param-name>width</param-name>
+			<param-value>80</param-value>
+		</init-param>
+		<init-param>
+			<param-name>height</param-name>
+			<param-value>22</param-value>
+		</init-param>
+		<init-param>
+			<param-name>codeCount</param-name>
+			<param-value>4</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>gernerateCodeServlet</servlet-name>
+		<url-pattern>/gernerateCodeServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

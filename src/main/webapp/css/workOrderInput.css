@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+.skyquicksupport {
+	    color: #666666;
+	    font: 12px/18px "微软雅黑",Helvetica,Arial,Verdana,"宋体";
+	    position: absolute;
+	    width: 100px;
+	    z-index: 200;
+	}
+	.skyquicksupport-header {
+	    background: none repeat scroll 0 0 #0283DC;
+    	border: 1px solid #0076C7; 
+	    color: #FFFFFF;
+	    font-weight: bold;
+	    padding: 5px;
+	    text-align: center;
+	}
+	.skyquicksupport-body {
+	    -moz-border-bottom-colors: none;
+	    -moz-border-left-colors: none;
+	    -moz-border-right-colors: none;
+	    -moz-border-top-colors: none;
+	    background: none repeat scroll 0 0 #FCFCFC;
+	    border-color: -moz-use-text-color #E5E5E5 #E5E5E5;
+	    border-image: none;
+	    border-right: 1px solid #E5E5E5;
+	    border-style: none solid solid;
+	    border-width: medium 1px 1px;
+	    padding: 5px 3px;
+	    font-size:12px;
+	}
+	.skyquicksupport a.skyquicksupport-livechatbtn {
+	    background-position: 0 0;
+	    clear: both;
+	    color: #0066CC;
+	    display: block;
+	    height: 19px;
+	    line-height: 15px;
+	    margin: 3px 0 3px 3px;
+	    overflow: hidden;
+	    padding: 4px 0 0 30px;
+	    width: 56px;
+	    cursor: pointer;
+	}
+	.skyquicksupport a {
+	    background: url("../images/sprite_quicksupport.gif") no-repeat scroll 7px -50px transparent;
+	    display: block;
+	    padding-left: 15px;
+	}
+	.popupDiv1{
+		position:absolute;
+		z-index:999;
+		top:200px;
+		left:50%;
+		width:375px;
+		margin-left:-137px;
+	}
+	.shade{
+		position:fixed;
+		z-index:99;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		background-color:Gray;	
+		filter:Alpha(Opacity=50);/* IE */
+		-moz-opacity:0.5; /* Moz + FF */
+		opacity: 0.5; 
+	}
+	.popupDiv1 .topic{
+	border:solid 1px #c2baaa;
+	border-bottom:none;
+	background:white;
+	padding:1px;
+}
+.popupDiv1 .topic h4{
+	padding:15px 15px 0;
+	background:url(../images/bg-popupTopic-x-blue.png) repeat-x top;
+	font:18px/40px "微软雅黑";
+	color:#ffffff;
+	overflow:hidden;
+	font-weight:bold;
+}
+.popupDiv1 .topic h4 img{float:left; margin-right:10px;}
+.popupDiv1 .cont{
+	padding:0 20px 5px;
+	border:solid 1px #999;
+	border-top:none;
+	background:white url(../images/bg-popup-bottom.gif) no-repeat bottom center;
+}
+.poopupTbl {
+    border: medium none;
+    line-height: 40px;
+    width: 100%;
+}
+/* to fix bug:0008790 0008557 */
+.workOrderBtn {
+	background: url("../images/btn_blue.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    width: 119px;
+}

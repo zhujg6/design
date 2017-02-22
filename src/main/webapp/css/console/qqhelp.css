@@ -1,0 +1,48 @@
+	#online-service {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #f7f7f7;
+    border-color: #2195db -moz-use-text-color #2195db #2195db;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 2px medium 2px 2px;
+    box-shadow: 1px 0 3px #ccc;
+    height: 280px;
+    position: fixed;
+    right: -162px;
+    top: 160px;
+    width: 160px;
+    z-index: 999;
+    font-size: 14px;
+	}
+	#online-service .title {
+    cursor: pointer;
+    height: 128px;
+    left: -42px;
+    position: absolute;
+    top: 20%;
+    width: 41px;
+	}
+	#online-service .online-service-content dl {
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 5px;
+	}
+	#online-service .online-service-content dl li a {
+    color: #2195db;
+	}
+	#online-service .online-service-content dl li.tel {
+    font-style: italic;
+	}
+	#online-service dt, #online-service dd {
+    line-height: 20px;
+	}
+	#online-service dt {
+    font-weight: bold;
+	}
+	#online-service .xian {
+    height: 10px;
+	}

@@ -1,0 +1,98 @@
+.area01{width:1000px;margin:auto;overflow:hidden;}.erji_l{float:left;overflow:hidden;}.erji_r{float:right;overflow:hidden;}.erji_lt{height:5px;background:url(../img/left_01.jpg) no-repeat;overflow:hidden;}.erji_lb{background:url(../img/left_03.jpg) no-repeat;height:8px;overflow:hidden;}
+.erji_lc{overflow:hidden;height:auto;padding-bottom:55px;}
+.erji_l ul li a i{ margin-right:5px;color:#2892d9;}
+.erji_lc .left_tit{height:42px;line-height:42px;font-size:16px;font-weight:normal;color:#555;text-align:left;
+  -webkit-border-radius: 4px 4px 0px 0px;
+     -moz-border-radius: 4px 4px 0px 0px;
+          border-radius: 4px 4px 0px 0px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7abbf7', endColorstr='#ff#3d84c4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);}
+
+.erji_lc ul{border-bottom:1px dashed #ddd;}.erji_lc .le01{line-height:40px;font-weight:normal;}.erji_lc ul li{height:34px;font-size: 14px;}.erji_lc ul li a{display:block;height:34px;line-height:34px;text-align:left;color:#666;text-decoration:none;}
+.erji_lc ul li a.hover{background:url(../img/left04.jpg) no-repeat right center #fff;padding-left: 10px;}
+.erji_lc ul li a:hover{background:#eee;padding-left: 10px;}
+.erji_lc ul li a span{display:block;}.erji_lc ul .cl01 a span{background:url(../img/lop_03.jpg) left center no-repeat;}
+.erji_ra{background:#f5f5f5;border:1px solid #ddd;border-radius:4px 4px 0px 0px;height:34px;text-align:left;line-height:34px;color:#666;}.erji_rb{height:136px;margin-top:20px;margin-bottom:10px;}.erji_rdbl{float:left;margin-right:20px;display:inline;}
+.erji_rdbl img{width:114px; height:130px;}
+.erji_rdbc{float:left;width:475px;line-height:22px;font-size:14px;}.erji_rdbc h2{font-size:18px;font-weight:normal;line-height:32px;}.erji_rdbr{float:right;text-align:center;padding-top:38px;}.erji_rdbra{background:url(../img/right03.jpg) no-repeat;width:112px;height:32px;text-align:left;line-height:32px;text-indent:40px;}.erji_rdbr .erji_rdbra a{font-size:14px;color:#fff;font-weight:bold;text-decoration:none;}.erji_rdbr a{font-size:14px;height:25px;display:block;}
+.erji_ra em{ padding-right:10px; border-right:1px solid #ddd;margin-right:10px;padding:10px 10px 6px 10px;}
+.erji_ra em i{ color: #999;
+    font-size: 20px;
+    line-height: 34px;}
+.erji_rc ul li a:hover,erji_rc ul li a.hover{ color:#F00;}
+.erji_r.span10{background:#fff;padding-left:20px;min-height: 830px;}
+.erji_l.span2{margin-right:-30px;}
+
+.shopcontent{ margin-top:20px; margin-bottom:20px;}
+.shopbanner{ height:230px;}
+.shophotpro { border-right:1px dashed #ddd; padding-left:20px;text-align: center;}
+.shophotpro img.prologo{
+	display: table-cell;
+    margin-bottom: 10px;
+    line-height: 85px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+	 }
+.shophotpro h2{ color:#555;
+ font-size:14px;
+ line-height:24px;
+
+}
+.softlist{font-size:12px; border-bottom:1px dashed #ccc; padding:15px 0px; margin-left:30px; float:left;}
+.softlist .span2{ margin-left:0px; }	
+p.softprice{color:#F90; font-size:18px; font-weight: bold;font-style: italic;}	 
+.softlist p{line-height:20px;}
+.tcolor5{ color:#555;}
+.tcolor7{color:#777;}	
+.softlist .span1{ width:140px; text-align:center;}
+.softlist .span3{ width:200px;}
+p.softos{ color:#393;}
+.softlist img{ height:90px;}
+
+
+.shopprodetailtop{ border-bottom:1px solid #ccc; float:left;}
+.shopproordertop .span8 ul li{ line-height:24px; color:#888; margin-bottom:10px;}
+.shopprodetailtop .span2 img,{  border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    width: 150px;}
+.shopproordertop .span8 ul li span{ width:100px; text-align:right; color:#444;font-size:13px;}
+.shopproordertop .span8 ul li.title span,.shopproordertop .span8 ul li.title{ color:#09C; font-size:18px;}
+.shopproordertop .span8 ul li span.txt8{color:#888;}
+.shopprodetailtop .table th, .shopprodetailtop .table td{border-top:1px dashed #dddddd; line-height:30px; font-size:14px;}
+
+.shopprodetail .detailcontent ul li{ margin-bottom:10px; line-height:24px; color:#666; font-size:12px;}
+.shopprodetail .detailcontent li h2{ font-size:14px; text-align: left;}
+.shopprodetail .softintro ul li a{ color:#06C;}
+.softprice table th{ background:#f7f7f7;}
+
+.shopproorder .accordion-heading{ background:#40c6dd; font-size:14px;}
+.shopproorder .accordion-heading a{color:#fff;font-size:14px;}
+.shopproorder .accordion-heading a i{ float:right;}
+.shopproorder table.softorder th{ font-weight:normal; font-size:14px;}
+.shopproorder table.softorder td{font-size:14px;}
+.shoporderprice{ background:#f7f7f7;}
+.shoporderprice h2{ font-size:14px; font-weight:normal; color:#666; }
+.shoporderprice .pricem{ color: #390; font-size:16px; font-style:italic; margin-right:10px;}
+.shoporderprice .price{ color:#ff9900; font-size:24px; font-style:italic; margin:10px 15px; font-weight:bold;}
+
+.shopprodetail .span7{width:620px;}
+.shopprodetail .span3{width:320px;}
+.shopprodetail .span7 table th,.shopprodetail .span7 table td,.softprice table th,.softprice table td{ font-size:14px; font-weight:normal; line-height:32px; }
+.shopprodetail .span7 table th{ text-align:right; width:100px;}
+.shopprodetail .span7 table td{ color:#999;}
+.shopprodetail .span7 table td a,.shopprodetailtop a{color:#09c;}
+.shopprodetail .span7 table td a:hover,.shopprodetailtop a:hover{color:#06c;}
+.shopprodetail .span7 table{ border-bottom:1px solid #ddd;}
+.txtcolor99{ color:#ff9900;}
+.shopprodetail .hotpro h3,.shopprodetail .prointro h3{ line-height:42px; font-size:16px;}
+.shopprodetail .prointro p{ line-height:24px; font-size:13px; color:#888;}
+.shopprodetail .prointro p a{color:#09c;}
+.shopprodetail .prointro p a:hover{color:#06c;}
+.shopprodetail .buybtn,.shoporderprice .buybtn{ background:#428bca;color: #fff; padding:10px 40px; font-size:14px;border-radius:4px;height:40px; line-height:40px; margin-left:50px;cursor:pointer;}
+.shopprodetail .buybtn:hover,.shoporderprice .buybtn:hover{background:#3276b1; text-decoration:none;}
+.softprice h2{ font-size:16px;margin-bottom:15px;}
+.softprice table th{ background:#eee;}
+.softprice table td{ background:#fff;}
+.growlUI h2,.growlUI h1{ color:#fff;}
